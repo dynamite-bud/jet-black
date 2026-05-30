@@ -1,5 +1,5 @@
 # Jet Black — Catppuccin-compatible @thm_* palette
-# Scheme author: rudra (derived from Pitch Black by Viktor Qvarfordt)
+# Scheme author: Rudra
 #
 # For tmux status bars built on catppuccin/tmux variable names. Source this
 # AFTER catppuccin loads to override its palette with jet-black (uses `set -g`,

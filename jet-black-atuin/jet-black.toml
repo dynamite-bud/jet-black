@@ -1,5 +1,5 @@
 # Jet Black — Atuin theme
-# Scheme author: rudra (derived from Pitch Black by Viktor Qvarfordt)
+# Scheme author: Rudra
 # Install: copy to ~/.config/atuin/themes/jet-black.toml, then in config.toml:
 #   [theme]
 #   name = "jet-black"

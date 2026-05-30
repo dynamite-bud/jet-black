@@ -1,5 +1,5 @@
 -- Jet Black — SketchyBar colors (0xAARRGGBB)
--- Scheme author: rudra (derived from Pitch Black by Viktor Qvarfordt)
+-- Scheme author: Rudra
 -- Drop-in replacement for colors.lua. NOTE: this is an OPAQUE jet-black bar —
 -- it replaces a translucent/liquid-glass design if you have one.
 local colors = {}

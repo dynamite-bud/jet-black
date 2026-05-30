@@ -45,6 +45,9 @@ for ed in vscode cursor; do
   cp "templates/tinted-vscode/themes/base24/$SLUG.json" "$dest"
   # Clean the display name in the generated JSON: "Base24 Jet Black" -> "Jet Black"
   python3 -c "import json,sys; p=sys.argv[1]; d=json.load(open(p)); d['name']='Jet Black'; json.dump(d, open(p,'w'), indent=2)" "$dest"
+  # Layer our opinionated tweaks (editor-overrides.json) on top of the generated
+  # theme — survives regeneration. Edit editor-overrides.json to iterate.
+  python3 dev/apply-editor-overrides.py "$dest"
 done
 
 echo "→ nvim"

@@ -1,5 +1,5 @@
 # Jet Black — Starship prompt (jet-black)
-# Scheme author: rudra (derived from Pitch Black by Viktor Qvarfordt)
+# Scheme author: Rudra
 # A full prompt theme: module layout mirrors a Catppuccin-style design, recolored
 # via [palettes.jet-black]. Use as STARSHIP_CONFIG, or copy the palette block +
 # `palette` line into your own starship.toml (module styles reference the

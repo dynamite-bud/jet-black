@@ -82,7 +82,7 @@
     "tab.activeBorderTop": "#c77dff80",
     "tab.inactiveBackground": "#000000",
     "tab.inactiveForeground": "#666666",
-    "editor.foreground": "#d4d4d4",
+    "editor.foreground": "#e6edf3",
     "editor.background": "#000000",
     "editorLineNumber.foreground": "#666666",
     "editor.selectionBackground": "#1a1a1a",
@@ -110,7 +110,7 @@
     "editorOverviewRuler.selectionHighlightForeground": "#ff8c1f",
     "editorOverviewRuler.wordHighlightForeground": "#25e6df",
     "editorOverviewRuler.wordHighlightStrongForeground": "#aef33f",
-    "editorOverviewRuler.modifiedForeground": "#25e6df80",
+    "editorOverviewRuler.modifiedForeground": "#ff8c1f80",
     "editorOverviewRuler.addedForeground": "#aef33f80",
     "editorOverviewRuler.deletedForeground": "#ff636080",
     "editorOverviewRuler.errorForeground": "#ff636080",
@@ -118,10 +118,10 @@
     "editorOverviewRuler.infoForeground": "#25e6df80",
     "editorError.foreground": "#ff6360",
     "editorWarning.foreground": "#ff8c1f",
-    "editorGutter.modifiedBackground": "#25e6df80",
+    "editorGutter.modifiedBackground": "#ff8c1f80",
     "editorGutter.addedBackground": "#aef33f80",
     "editorGutter.deletedBackground": "#ff636080",
-    "gitDecoration.modifiedResourceForeground": "#25e6df",
+    "gitDecoration.modifiedResourceForeground": "#ff8c1f",
     "gitDecoration.deletedResourceForeground": "#ff6360",
     "gitDecoration.untrackedResourceForeground": "#aef33f",
     "gitDecoration.ignoredResourceForeground": "#666666",
@@ -1148,6 +1148,199 @@
       "settings": {
         "foreground": "#666666"
       }
+    },
+    {
+      "name": "jb: comments -> GitHub gray",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment",
+        "comment.block.documentation",
+        "string.comment"
+      ],
+      "settings": {
+        "foreground": "#8b949e"
+      }
+    },
+    {
+      "name": "jb: keys / property names + their quotes -> green",
+      "scope": [
+        "entity.name.tag.yaml",
+        "entity.name.section.toml",
+        "variable.other.key.toml",
+        "support.type.property-name",
+        "meta.object-literal.key",
+        "string.json support.type.property-name",
+        "punctuation.support.type.property-name.begin",
+        "punctuation.support.type.property-name.end",
+        "meta.object-literal.key punctuation.definition.string.begin",
+        "meta.object-literal.key punctuation.definition.string.end",
+        "support.type.property-name punctuation.definition.string.begin",
+        "support.type.property-name punctuation.definition.string.end"
+      ],
+      "settings": {
+        "foreground": "#7ee787"
+      }
+    },
+    {
+      "name": "jb: strings + quotes -> GitHub light blue",
+      "scope": [
+        "string",
+        "string.quoted",
+        "string.template",
+        "punctuation.definition.string.begin",
+        "punctuation.definition.string.end"
+      ],
+      "settings": {
+        "foreground": "#a5d6ff"
+      }
+    },
+    {
+      "name": "jb: numbers / constants / booleans -> GitHub blue",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "constant.language.boolean",
+        "constant.language.null",
+        "constant.language.undefined",
+        "constant.other",
+        "support.constant",
+        "keyword.other.unit"
+      ],
+      "settings": {
+        "foreground": "#79c0ff"
+      }
+    },
+    {
+      "name": "jb: keywords / storage / control -> GitHub red",
+      "scope": [
+        "keyword",
+        "keyword.control",
+        "keyword.control.flow",
+        "keyword.control.conditional",
+        "keyword.control.loop",
+        "keyword.control.import",
+        "keyword.control.export",
+        "keyword.control.from",
+        "keyword.operator.new",
+        "keyword.operator.expression",
+        "keyword.operator.logical",
+        "keyword.operator.delete",
+        "storage.type",
+        "storage.type.function",
+        "storage.type.class",
+        "storage.modifier",
+        "storage.modifier.async",
+        "variable.language"
+      ],
+      "settings": {
+        "foreground": "#ff7b72"
+      }
+    },
+    {
+      "name": "jb: functions / methods -> GitHub purple",
+      "scope": [
+        "entity.name.function",
+        "meta.function-call",
+        "meta.function-call.generic",
+        "meta.function-call.method",
+        "meta.method-call",
+        "entity.name.method",
+        "support.function",
+        "variable.function"
+      ],
+      "settings": {
+        "foreground": "#d2a8ff"
+      }
+    },
+    {
+      "name": "jb: variables / objects / properties -> GitHub blue",
+      "scope": [
+        "variable",
+        "variable.other",
+        "variable.other.readwrite",
+        "variable.other.readwrite.ts",
+        "variable.other.readwrite.js",
+        "variable.other.readwrite.tsx",
+        "variable.other.object",
+        "variable.other.object.ts",
+        "variable.other.object.js",
+        "variable.other.object.tsx",
+        "variable.other.constant",
+        "variable.other.constant.ts",
+        "variable.other.constant.js",
+        "variable.other.constant.tsx",
+        "variable.other.property",
+        "variable.other.property.ts",
+        "variable.other.property.js",
+        "variable.other.property.tsx",
+        "support.variable.property",
+        "meta.definition.variable variable"
+      ],
+      "settings": {
+        "foreground": "#79c0ff"
+      }
+    },
+    {
+      "name": "jb: classes / types / constructors -> GitHub orange",
+      "scope": [
+        "entity.name.type",
+        "entity.name.type.class",
+        "entity.name.class",
+        "entity.other.inherited-class",
+        "support.class",
+        "support.type",
+        "entity.name.type.interface",
+        "entity.name.type.enum",
+        "meta.type.annotation entity.name.type",
+        "support.type.primitive"
+      ],
+      "settings": {
+        "foreground": "#ffa657"
+      }
+    },
+    {
+      "name": "jb: brackets / braces / parens -> light red",
+      "scope": [
+        "meta.brace.round",
+        "meta.brace.square",
+        "meta.brace.curly",
+        "punctuation.section.block.begin",
+        "punctuation.section.block.end",
+        "punctuation.definition.block",
+        "punctuation.section.parens.begin",
+        "punctuation.section.parens.end",
+        "punctuation.definition.parameters.begin",
+        "punctuation.definition.parameters.end",
+        "punctuation.definition.arguments.begin",
+        "punctuation.definition.arguments.end",
+        "punctuation.brackets",
+        "punctuation.parenthesis",
+        "punctuation.squarebracket",
+        "punctuation.curlybrace"
+      ],
+      "settings": {
+        "foreground": "#ff8c84"
+      }
     }
-  ]
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "variable": "#79c0ff",
+    "variable.readonly": "#79c0ff",
+    "variable.readonly.defaultLibrary": "#79c0ff",
+    "property": "#79c0ff",
+    "property.readonly": "#79c0ff",
+    "parameter": "#e6edf3",
+    "function": "#d2a8ff",
+    "function.defaultLibrary": "#d2a8ff",
+    "method": "#d2a8ff",
+    "class": "#ffa657",
+    "class.defaultLibrary": "#ffa657",
+    "interface": "#ffa657",
+    "type": "#ffa657",
+    "type.defaultLibrary": "#ffa657",
+    "enum": "#ffa657",
+    "namespace": "#ffa657",
+    "enumMember": "#79c0ff"
+  }
 }

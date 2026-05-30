@@ -2,7 +2,7 @@
 
 " tinted-vim (https://github.com/tinted-theming/tinted-vim)
 " Scheme name: Jet Black
-" Scheme author: rudra (derived from Pitch Black by Viktor Qvarfordt)
+" Scheme author: Rudra
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that

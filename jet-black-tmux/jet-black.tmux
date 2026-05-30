@@ -1,5 +1,5 @@
 # Base24 Jet Black
-# Scheme author: rudra (derived from Pitch Black by Viktor Qvarfordt)
+# Scheme author: Rudra
 # Template author: Tinted Theming: (https://github.com/tinted-theming)
 
 # default statusbar colors

@@ -1,7 +1,7 @@
 system: "base24"
 name: "Jet Black"
 slug: "jet-black"
-author: "rudra (derived from Pitch Black by Viktor Qvarfordt)"
+author: "Rudra"
 variant: "dark"
 description: "Pure-black theme derived from VS Code Pitch Black + Dark+, equalized in OKLCH for legibility on #000."
 palette:
