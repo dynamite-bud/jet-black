@@ -14,25 +14,24 @@ palette:
   base05: "d4d4d4"  # default foreground (Pitch Black primary text)
   base06: "e8e8e8"  # lighter foreground
   base07: "ffffff"  # brightest — emphasis / headings
-  # ── Accents (normal ANSI) — OKLCH-tuned for APCA on #000 ──
-  # Floor Lc>=60; red/magenta Lc>=55 to stay recognizable. Re-tune:
-  #   python3 dev/oklch.py tune <hex> <targetLc>
-  base08: "ff827a"  # red     — variables, errors, deleted     (Dark+ error, lightened; Lc 55)
-  base09: "ff9652"  # orange  — integers, constants, booleans  (derived; Lc 60)
-  base0A: "d0c590"  # yellow  — classes, search highlight       (Dark+ function, desaturated)
-  base0B: "a8d57e"  # green   — strings, inserted               (Dark+ number, desaturated)
-  base0C: "64c1b0"  # cyan    — support, regex, escapes         (Dark+ type/class teal; Lc 60)
-  base0D: "70b7f6"  # blue    — functions, methods, headings    (Dark+ keyword, lightened; Lc 60)
-  base0E: "d293cd"  # magenta — keywords, control flow          (Dark+ control keyword; Lc 55)
-  base0F: "d7ba7d"  # gold    — deprecated, special             (Dark+ css-class/escape)
+  # ── Accents (normal ANSI) — vivid neon, high chroma, APCA-checked on #000 ──
+  # Punchy by design (Lc mostly >=70). Re-tune lightness: dev/oklch.py tune <hex> <Lc>
+  base08: "ff6360"  # red        — variables, errors, deleted
+  base09: "ff8c1f"  # neon orange— integers, constants, booleans
+  base0A: "ffe14d"  # yellow     — classes, search highlight
+  base0B: "aef33f"  # lime green — strings, inserted
+  base0C: "25e6df"  # neon cyan  — support, regex, escapes
+  base0D: "50b4ff"  # electric blue — functions, methods, headings
+  base0E: "c77dff"  # neon purple— keywords, control flow
+  base0F: "ff6fbf"  # neon pink  — deprecated, special, embedded tags
   # ── base24 extras: darker backgrounds + 6 bright ANSI accents ──
-  # Per base24 spec: base10/11 are darker bgs (can't go below pure black, so
-  # they stay #000000); brights are R,Y,G,C,B,M only (no bright orange/brown).
-  base10: "000000"  # darker black  (bg; degenerate on pure black)
+  # base10/11 are darker bgs (can't beat pure black, so stay #000000);
+  # brights are R,Y,G,C,B,M only (no bright orange/brown).
+  base10: "000000"  # darker black  (bg)
   base11: "000000"  # darkest black (bg)
-  base12: "ff9894"  # bright red     (ANSI 9)
-  base13: "e8dc7f"  # bright yellow  (ANSI 11)
-  base14: "c5e88b"  # bright green   (ANSI 10)
-  base15: "72d4c0"  # bright cyan    (ANSI 14)
-  base16: "86ceff"  # bright blue    (ANSI 12)
-  base17: "dd99ff"  # bright magenta (ANSI 13)
+  base12: "ff8c84"  # bright red     (ANSI 9)
+  base13: "fff04d"  # bright yellow  (ANSI 11)
+  base14: "c6ff5e"  # bright lime    (ANSI 10)
+  base15: "5cf2ee"  # bright cyan    (ANSI 14)
+  base16: "5cb3ff"  # bright blue    (ANSI 12)
+  base17: "ff88f8"  # bright neon pink (ANSI 13)

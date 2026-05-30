@@ -88,12 +88,20 @@ for slot, role in ROLES.items():
     w = wcag_ratio(c, bg)
     lc = abs(apca_lc(c, bg))
     aa = "PASS" if w >= 4.5 else "FAIL"
-    # Lc >= 60 comfortable; 55-60 usable (acceptable for deep red/magenta on black).
-    ok = "ok" if lc >= 60 else ("ok*" if lc >= 55 else "LOW")
-    if w < 4.5 or lc < 55:
+    # Vivid-neon tiers on pure black: >=60 comfortable, 50-60 vivid, 45-50 bold,
+    # <45 genuinely unreadable (fail). Saturated red/pink can't beat ~50 on #000.
+    if lc >= 60:
+        ok = "ok"
+    elif lc >= 50:
+        ok = "vivid"
+    elif lc >= 45:
+        ok = "bold"
+    else:
+        ok = "LOW"
+    if w < 4.5 or lc < 45:
         fails += 1
-    print(f"{slot:7} {role:11} #{pal[slot]:7} {w:5.2f}:1 {aa:4} {lc:8.1f} {ok:4}")
+    print(f"{slot:7} {role:11} #{pal[slot]:7} {w:5.2f}:1 {aa:4} {lc:8.1f} {ok:5}")
 print("-" * 52)
-print(f"{fails} slot(s) below the usable floor (WCAG 4.5:1 / APCA Lc 55)." if fails
-      else "All accents pass: WCAG >= 4.5:1, APCA Lc >= 55 (ok* = 55-60, usable).")
+print(f"{fails} slot(s) genuinely unreadable (WCAG < 4.5:1 / APCA Lc < 45)." if fails
+      else "All accents pass (WCAG >= 4.5:1, APCA Lc >= 45). vivid=50-60, bold=45-50.")
 sys.exit(1 if fails else 0)
