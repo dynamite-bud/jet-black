@@ -9,10 +9,8 @@ set -g @thm_bg "#000000"
 set -g @thm_fg "#d4d4d4"
 set -g @thm_red "#ff6360"
 set -g @thm_maroon "#ff6360"
-# UI fills (active window bg, last-window fg) use a DEEPER orange than the neon
-# syntax orange (base09 #ff8c1f) — a bright fill glares on pure black.
-set -g @thm_peach "#d9731f"
-set -g @thm_orange "#d9731f"
+set -g @thm_peach "#ff8c1f"
+set -g @thm_orange "#ff8c1f"
 set -g @thm_yellow "#ffe14d"
 set -g @thm_green "#aef33f"
 set -g @thm_teal "#25e6df"
