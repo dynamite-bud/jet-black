@@ -1,0 +1,55 @@
+# Jet Black — Starship theme
+# Scheme author: rudra (derived from Pitch Black by Viktor Qvarfordt)  ·  System: base24
+# Template author: jet-black (https://github.com/rudra/jet-black)
+#
+# Use as a full config (STARSHIP_CONFIG=.../jet-black.toml) or copy the
+# [palettes.jet-black] block + `palette` line into your own starship.toml.
+
+palette = "jet-black"
+
+[palettes.jet-black]
+black   = "#000000"
+bg      = "#1a1a1a"
+sel     = "#2a2a2a"
+muted   = "#666666"
+subtle  = "#808080"
+fg      = "#d4d4d4"
+white   = "#ffffff"
+red     = "#ff827a"
+orange  = "#ff9652"
+yellow  = "#d0c590"
+green   = "#a8d57e"
+cyan    = "#64c1b0"
+blue    = "#70b7f6"
+magenta = "#d293cd"
+gold    = "#d7ba7d"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol   = "[❯](bold red)"
+vimcmd_symbol  = "[❮](bold yellow)"
+
+[directory]
+style = "bold blue"
+
+[git_branch]
+style = "bold magenta"
+
+[git_status]
+style = "bold red"
+
+[git_state]
+style = "bold orange"
+
+[cmd_duration]
+style = "bold yellow"
+
+[hostname]
+style = "bold green"
+
+[username]
+style_user = "bold cyan"
+style_root = "bold red"
+
+[time]
+style = "bold muted"

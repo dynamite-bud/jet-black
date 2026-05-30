@@ -45,7 +45,7 @@ done
 echo "→ starship"
 if [ -f templates/starship/templates/config.yaml ]; then
   build_template templates/starship
-  cp "templates/starship/$SLUG.toml" jet-black-starship/jet-black.toml
+  cp "templates/starship/themes/$SLUG.toml" jet-black-starship/jet-black.toml
 else
   echo "  (skipped: templates/starship not set up yet)"
 fi

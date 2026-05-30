@@ -1,0 +1,55 @@
+# {{ scheme-name }} — Starship theme
+# Scheme author: {{ scheme-author }}  ·  System: {{ scheme-system }}
+# Template author: jet-black (https://github.com/rudra/jet-black)
+#
+# Use as a full config (STARSHIP_CONFIG=.../jet-black.toml) or copy the
+# [palettes.jet-black] block + `palette` line into your own starship.toml.
+
+palette = "jet-black"
+
+[palettes.jet-black]
+black   = "#{{ base00-hex }}"
+bg      = "#{{ base01-hex }}"
+sel     = "#{{ base02-hex }}"
+muted   = "#{{ base03-hex }}"
+subtle  = "#{{ base04-hex }}"
+fg      = "#{{ base05-hex }}"
+white   = "#{{ base07-hex }}"
+red     = "#{{ base08-hex }}"
+orange  = "#{{ base09-hex }}"
+yellow  = "#{{ base0A-hex }}"
+green   = "#{{ base0B-hex }}"
+cyan    = "#{{ base0C-hex }}"
+blue    = "#{{ base0D-hex }}"
+magenta = "#{{ base0E-hex }}"
+gold    = "#{{ base0F-hex }}"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol   = "[❯](bold red)"
+vimcmd_symbol  = "[❮](bold yellow)"
+
+[directory]
+style = "bold blue"
+
+[git_branch]
+style = "bold magenta"
+
+[git_status]
+style = "bold red"
+
+[git_state]
+style = "bold orange"
+
+[cmd_duration]
+style = "bold yellow"
+
+[hostname]
+style = "bold green"
+
+[username]
+style_user = "bold cyan"
+style_root = "bold red"
+
+[time]
+style = "bold muted"
