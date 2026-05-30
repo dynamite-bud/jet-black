@@ -53,11 +53,18 @@ ln -sfn "$ROOT/jet-black-tmux/jet-black.tmux"         "$ACTIVE/tmux.conf"
 ln -sfn "$ROOT/jet-black-tmux/jet-black-thm.tmux"     "$ACTIVE/tmux-thm.tmux"
 ln -sfn "$ROOT/jet-black-starship/jet-black.toml"     "$ACTIVE/starship.toml"
 ln -sfn "$ROOT/jet-black-nvim"                        "$ACTIVE/nvim"
+ln -sfn "$ROOT/jet-black-atuin/jet-black.toml"        "$ACTIVE/atuin.toml"
+ln -sfn "$ROOT/jet-black-sketchybar/colors.lua"       "$ACTIVE/sketchybar-colors.lua"
 
 # Register a ghostty theme named "jet-black" so the config can use
 # `theme = light:GitHub Light High Contrast,dark:jet-black`.
 GHOSTTY_THEMES="${XDG_CONFIG_HOME:-$HOME/.config}/ghostty/themes"
 [ -d "$(dirname "$GHOSTTY_THEMES")" ] && { mkdir -p "$GHOSTTY_THEMES"; ln -sfn "$ACTIVE/ghostty.conf" "$GHOSTTY_THEMES/jet-black"; }
+
+# Register the atuin theme as ~/.config/atuin/themes/jet-black.toml (atuin
+# reads it when config.toml has [theme] name = "jet-black").
+ATUIN_THEMES="${XDG_CONFIG_HOME:-$HOME/.config}/atuin/themes"
+[ -d "$(dirname "$ATUIN_THEMES")" ] && { mkdir -p "$ATUIN_THEMES"; ln -sfn "$ACTIVE/atuin.toml" "$ATUIN_THEMES/jet-black.toml"; }
 
 # Persist for shells (this process can't export to the parent) and for the
 # launchd session, so LaunchAgents / the appearance trigger see the same value.

@@ -61,4 +61,14 @@ else
   echo "  (skipped: templates/starship not set up yet)"
 fi
 
+echo "→ atuin"
+build_template templates/atuin
+mkdir -p jet-black-atuin
+cp "templates/atuin/themes/$SLUG.toml" jet-black-atuin/jet-black.toml
+
+echo "→ sketchybar (opt-in)"
+build_template templates/sketchybar
+mkdir -p jet-black-sketchybar
+cp "templates/sketchybar/themes/$SLUG-colors.lua" jet-black-sketchybar/colors.lua
+
 echo "✓ build complete — see jet-black-*/ folders"

@@ -44,4 +44,20 @@ for pair in "vscode $HOME/.vscode/extensions" "cursor $HOME/.cursor/extensions";
   echo "$1     → linked into $2 (restart editor, pick 'Jet Black')"
 done
 echo
+
+# ── atuin ──────────────────────────────────────────────────────────────────
+ATUIN_THEMES="${XDG_CONFIG_HOME:-$HOME/.config}/atuin/themes"
+if [ -d "$(dirname "$ATUIN_THEMES")" ]; then
+  mkdir -p "$ATUIN_THEMES"
+  cp "$ROOT/jet-black-atuin/jet-black.toml" "$ATUIN_THEMES/jet-black.toml"
+  echo "atuin     → installed $ATUIN_THEMES/jet-black.toml"
+  echo "            add to config.toml:  [theme]\\n            name = \"jet-black\""
+  echo
+fi
+
+# ── sketchybar (opt-in) ──────────────────────────────────────────────────────
+echo "sketchybar→ jet-black-sketchybar/colors.lua is an OPAQUE black palette."
+echo "            opt in by replacing your sketchybar colors.lua with it (or"
+echo "            sourcing it in your dark branch). Skipped by default."
+echo
 echo "✓ install complete. To PUBLISH the editor extensions, run ./publish.sh"
