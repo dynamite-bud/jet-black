@@ -34,6 +34,9 @@ cp "templates/tinted-terminal/themes/ghostty/$SLUG" jet-black-ghostty/jet-black.
 echo "→ tmux"
 build_template templates/tinted-tmux
 cp "templates/tinted-tmux/colors/$SLUG.conf" jet-black-tmux/jet-black.tmux
+# Catppuccin-compatible @thm_* fragment (for status bars built on catppuccin vars)
+build_template templates/tmux-thm
+cp "templates/tmux-thm/themes/$SLUG-thm.tmux" jet-black-tmux/jet-black-thm.tmux
 
 echo "→ vscode + cursor"
 build_template templates/tinted-vscode
@@ -43,6 +46,12 @@ for ed in vscode cursor; do
   # Clean the display name in the generated JSON: "Base24 Jet Black" -> "Jet Black"
   python3 -c "import json,sys; p=sys.argv[1]; d=json.load(open(p)); d['name']='Jet Black'; json.dump(d, open(p,'w'), indent=2)" "$dest"
 done
+
+echo "→ nvim"
+build_template templates/tinted-vim
+mkdir -p jet-black-nvim/colors
+sed "s/'base24-jet-black'/'jet-black'/" \
+  "templates/tinted-vim/colors/$SLUG.vim" > jet-black-nvim/colors/jet-black.vim
 
 echo "→ starship"
 if [ -f templates/starship/templates/config.yaml ]; then

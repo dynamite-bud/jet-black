@@ -48,9 +48,11 @@ fi
 
 ROOT="$(resolve_root "$cmd")"
 mkdir -p "$ACTIVE"
-ln -sfn "$ROOT/jet-black-ghostty/jet-black.conf"  "$ACTIVE/ghostty.conf"
-ln -sfn "$ROOT/jet-black-tmux/jet-black.tmux"     "$ACTIVE/tmux.conf"
-ln -sfn "$ROOT/jet-black-starship/jet-black.toml" "$ACTIVE/starship.toml"
+ln -sfn "$ROOT/jet-black-ghostty/jet-black.conf"      "$ACTIVE/ghostty.conf"
+ln -sfn "$ROOT/jet-black-tmux/jet-black.tmux"         "$ACTIVE/tmux.conf"
+ln -sfn "$ROOT/jet-black-tmux/jet-black-thm.tmux"     "$ACTIVE/tmux-thm.tmux"
+ln -sfn "$ROOT/jet-black-starship/jet-black.toml"     "$ACTIVE/starship.toml"
+ln -sfn "$ROOT/jet-black-nvim"                        "$ACTIVE/nvim"
 
 # Persist for shells (this process can't export to the parent) and for the
 # launchd session, so LaunchAgents / the appearance trigger see the same value.
