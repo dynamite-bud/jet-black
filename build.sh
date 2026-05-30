@@ -38,8 +38,10 @@ cp "templates/tinted-tmux/colors/$SLUG.conf" jet-black-tmux/jet-black.tmux
 echo "→ vscode + cursor"
 build_template templates/tinted-vscode
 for ed in vscode cursor; do
-  cp "templates/tinted-vscode/themes/base24/$SLUG.json" \
-     "jet-black-$ed/themes/jet-black-color-theme.json"
+  dest="jet-black-$ed/themes/jet-black-color-theme.json"
+  cp "templates/tinted-vscode/themes/base24/$SLUG.json" "$dest"
+  # Clean the display name in the generated JSON: "Base24 Jet Black" -> "Jet Black"
+  python3 -c "import json,sys; p=sys.argv[1]; d=json.load(open(p)); d['name']='Jet Black'; json.dump(d, open(p,'w'), indent=2)" "$dest"
 done
 
 echo "→ starship"
