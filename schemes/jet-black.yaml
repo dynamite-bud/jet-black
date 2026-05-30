@@ -14,18 +14,20 @@ palette:
   base05: "d4d4d4"  # default foreground (Pitch Black primary text)
   base06: "e8e8e8"  # lighter foreground
   base07: "ffffff"  # brightest — emphasis / headings
-  # ── Accents (normal ANSI) ──
-  base08: "f44747"  # red     — variables, errors, deleted     (Dark+ error)
-  base09: "d2691e"  # orange  — integers, constants, booleans  (derived; Dark+ has none)
+  # ── Accents (normal ANSI) — OKLCH-tuned for APCA on #000 ──
+  # Floor Lc>=60; red/magenta Lc>=55 to stay recognizable. Re-tune:
+  #   python3 dev/oklch.py tune <hex> <targetLc>
+  base08: "ff827a"  # red     — variables, errors, deleted     (Dark+ error, lightened; Lc 55)
+  base09: "ff9652"  # orange  — integers, constants, booleans  (derived; Lc 60)
   base0A: "d0c590"  # yellow  — classes, search highlight       (Dark+ function, desaturated)
   base0B: "a8d57e"  # green   — strings, inserted               (Dark+ number, desaturated)
-  base0C: "5bb8a8"  # cyan    — support, regex, escapes         (Dark+ type/class teal)
-  base0D: "6db3f2"  # blue    — functions, methods, headings    (Dark+ keyword, lightened)
-  base0E: "c586c0"  # magenta — keywords, control flow          (Dark+ control keyword)
+  base0C: "64c1b0"  # cyan    — support, regex, escapes         (Dark+ type/class teal; Lc 60)
+  base0D: "70b7f6"  # blue    — functions, methods, headings    (Dark+ keyword, lightened; Lc 60)
+  base0E: "d293cd"  # magenta — keywords, control flow          (Dark+ control keyword; Lc 55)
   base0F: "d7ba7d"  # gold    — deprecated, special             (Dark+ css-class/escape)
   # ── Bright accents (base24: bright ANSI variants) ──
-  base10: "ff6b6b"  # bright red
-  base11: "e8944a"  # bright orange
+  base10: "ff9894"  # bright red
+  base11: "ffad63"  # bright orange
   base12: "e8dc7f"  # bright yellow
   base13: "c5e88b"  # bright green
   base14: "72d4c0"  # bright cyan
