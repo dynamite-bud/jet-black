@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+# jet-black-source — choose where the system reads the jet-black theme from.
+#
+#   jet-black-source local     # use this working repo (live edits)
+#   jet-black-source prod      # use the published GitHub repo (clone + pull)
+#   jet-black-source           # use $THEME_PALETTE_SOURCE (default: prod)
+#   jet-black-source status    # show current source + active links
+#
+# It repoints the stable symlinks in ~/.config/jet-black/active/ at the chosen
+# source, persists the choice as a launchd-global env var (so the macOS
+# appearance trigger sees it too), and reloads running tools.
+#
+# Wire your tools ONCE at these stable paths:
+#   ghostty :  theme = ~/.config/jet-black/active/ghostty.conf
+#   tmux    :  source-file ~/.config/jet-black/active/tmux.conf
+#   starship:  export STARSHIP_CONFIG=~/.config/jet-black/active/starship.toml
+set -euo pipefail
+
+REPO_LOCAL="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+CFG="${XDG_CONFIG_HOME:-$HOME/.config}/jet-black"
+PROD_DIR="$CFG/prod"
+ACTIVE="$CFG/active"
+REPO_URL="https://github.com/dynamite-bud/jet-black"
+
+resolve_root() { # <local|prod> -> echoes the source root dir
+  case "$1" in
+    local) echo "$REPO_LOCAL" ;;
+    prod)
+      if [ ! -d "$PROD_DIR/.git" ]; then
+        git clone --depth 1 "$REPO_URL" "$PROD_DIR" >/dev/null 2>&1 \
+          || { echo "error: cannot clone $REPO_URL (is it pushed yet?)" >&2; exit 1; }
+      else
+        git -C "$PROD_DIR" pull --ff-only --quiet 2>/dev/null || true
+      fi
+      echo "$PROD_DIR" ;;
+    *) echo "usage: jet-black-source [local|prod|status]" >&2; exit 1 ;;
+  esac
+}
+
+cmd="${1:-${THEME_PALETTE_SOURCE:-prod}}"
+
+if [ "$cmd" = "status" ]; then
+  echo "THEME_PALETTE_SOURCE = ${THEME_PALETTE_SOURCE:-(unset)}"
+  echo "launchd env          = $(launchctl getenv THEME_PALETTE_SOURCE 2>/dev/null || echo '(unset)')"
+  echo "active links:"; ls -l "$ACTIVE" 2>/dev/null | sed 's/^/  /' || echo "  (none — run: jet-black-source local|prod)"
+  exit 0
+fi
+
+ROOT="$(resolve_root "$cmd")"
+mkdir -p "$ACTIVE"
+ln -sfn "$ROOT/jet-black-ghostty/jet-black.conf"  "$ACTIVE/ghostty.conf"
+ln -sfn "$ROOT/jet-black-tmux/jet-black.tmux"     "$ACTIVE/tmux.conf"
+ln -sfn "$ROOT/jet-black-starship/jet-black.toml" "$ACTIVE/starship.toml"
+
+# Persist for shells (this process can't export to the parent) and for the
+# launchd session, so LaunchAgents / the appearance trigger see the same value.
+launchctl setenv THEME_PALETTE_SOURCE "$cmd" 2>/dev/null || true
+
+# Editors: local => dev-symlink the working extension; prod => rely on the
+# installed/published extension (remove the dev symlink).
+for pair in "vscode $HOME/.vscode/extensions" "cursor $HOME/.cursor/extensions"; do
+  set -- $pair
+  [ -d "$2" ] || continue
+  link="$2/rudra.jet-black-theme-dev"
+  if [ "$cmd" = local ]; then ln -sfn "$REPO_LOCAL/jet-black-$1" "$link"; else rm -f "$link"; fi
+done
+
+# Reload running tools (best-effort). ghostty watches its own config, not the
+# theme file, so reload it manually with Cmd+Shift+, (noted, not forced).
+if command -v tmux >/dev/null && tmux list-sessions >/dev/null 2>&1; then
+  tmux source-file "$ACTIVE/tmux.conf" 2>/dev/null || true
+fi
+
+echo "jet-black source → $cmd  ($ROOT)"
+echo "(ghostty: reload with Cmd+Shift+, · new shells pick up starship)"
