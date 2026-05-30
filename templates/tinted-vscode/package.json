@@ -1,0 +1,2598 @@
+{
+  "name": "base16-tinted-themes",
+  "displayName": "Tinted VSCode",
+  "description": "Choose from over 250 Tinted Themes",
+  "version": "0.44.0",
+  "repository": "https://github.com/tinted-theming/tinted-vscode",
+  "publisher": "TintedTheming",
+  "icon": "assets/tinted-theming-logo.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "base16",
+    "base24",
+    "color",
+    "color-theme",
+    "dark",
+    "light",
+    "theme",
+    "tinted",
+    "tinted-theming"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "update:packagejson:themes": "node ./scripts/updateWithLatestThemes.js",
+    "update:packagejson:version": "node ./scripts/minorVersionBump.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "eslint": "^9.9.1",
+    "jsonc-parser": "^3.3.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "base16-0x96f",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-0x96f.json"
+      },
+      {
+        "label": "base16-3024",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-3024.json"
+      },
+      {
+        "label": "base16-apathy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-apathy.json"
+      },
+      {
+        "label": "base16-apprentice",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-apprentice.json"
+      },
+      {
+        "label": "base16-ascendancy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-ascendancy.json"
+      },
+      {
+        "label": "base16-ashes",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-ashes.json"
+      },
+      {
+        "label": "base16-atelier-cave-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-cave-light.json"
+      },
+      {
+        "label": "base16-atelier-cave",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-cave.json"
+      },
+      {
+        "label": "base16-atelier-dune-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-dune-light.json"
+      },
+      {
+        "label": "base16-atelier-dune",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-dune.json"
+      },
+      {
+        "label": "base16-atelier-estuary-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-estuary-light.json"
+      },
+      {
+        "label": "base16-atelier-estuary",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-estuary.json"
+      },
+      {
+        "label": "base16-atelier-forest-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-forest-light.json"
+      },
+      {
+        "label": "base16-atelier-forest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-forest.json"
+      },
+      {
+        "label": "base16-atelier-heath-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-heath-light.json"
+      },
+      {
+        "label": "base16-atelier-heath",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-heath.json"
+      },
+      {
+        "label": "base16-atelier-lakeside-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-lakeside-light.json"
+      },
+      {
+        "label": "base16-atelier-lakeside",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-lakeside.json"
+      },
+      {
+        "label": "base16-atelier-plateau-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-plateau-light.json"
+      },
+      {
+        "label": "base16-atelier-plateau",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-plateau.json"
+      },
+      {
+        "label": "base16-atelier-savanna-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-savanna-light.json"
+      },
+      {
+        "label": "base16-atelier-savanna",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-savanna.json"
+      },
+      {
+        "label": "base16-atelier-seaside-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-seaside-light.json"
+      },
+      {
+        "label": "base16-atelier-seaside",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-seaside.json"
+      },
+      {
+        "label": "base16-atelier-sulphurpool-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-atelier-sulphurpool-light.json"
+      },
+      {
+        "label": "base16-atelier-sulphurpool",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atelier-sulphurpool.json"
+      },
+      {
+        "label": "base16-atlas",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-atlas.json"
+      },
+      {
+        "label": "base16-ayu-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-ayu-dark.json"
+      },
+      {
+        "label": "base16-ayu-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-ayu-light.json"
+      },
+      {
+        "label": "base16-ayu-mirage",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-ayu-mirage.json"
+      },
+      {
+        "label": "base16-aztec",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-aztec.json"
+      },
+      {
+        "label": "base16-bespin",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-bespin.json"
+      },
+      {
+        "label": "base16-black-metal-bathory",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-bathory.json"
+      },
+      {
+        "label": "base16-black-metal-burzum",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-burzum.json"
+      },
+      {
+        "label": "base16-black-metal-dark-funeral",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-dark-funeral.json"
+      },
+      {
+        "label": "base16-black-metal-gorgoroth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-gorgoroth.json"
+      },
+      {
+        "label": "base16-black-metal-immortal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-immortal.json"
+      },
+      {
+        "label": "base16-black-metal-khold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-khold.json"
+      },
+      {
+        "label": "base16-black-metal-marduk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-marduk.json"
+      },
+      {
+        "label": "base16-black-metal-mayhem",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-mayhem.json"
+      },
+      {
+        "label": "base16-black-metal-nile",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-nile.json"
+      },
+      {
+        "label": "base16-black-metal-venom",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal-venom.json"
+      },
+      {
+        "label": "base16-black-metal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-black-metal.json"
+      },
+      {
+        "label": "base16-blueforest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-blueforest.json"
+      },
+      {
+        "label": "base16-blueish",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-blueish.json"
+      },
+      {
+        "label": "base16-boo-shnickle-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-boo-shnickle-light.json"
+      },
+      {
+        "label": "base16-boo-shnickle",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-boo-shnickle.json"
+      },
+      {
+        "label": "base16-booshnickle-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-booshnickle-dark.json"
+      },
+      {
+        "label": "base16-brewer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-brewer.json"
+      },
+      {
+        "label": "base16-bright",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-bright.json"
+      },
+      {
+        "label": "base16-brogrammer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-brogrammer.json"
+      },
+      {
+        "label": "base16-brushtrees-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-brushtrees-dark.json"
+      },
+      {
+        "label": "base16-brushtrees",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-brushtrees.json"
+      },
+      {
+        "label": "base16-caroline",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-caroline.json"
+      },
+      {
+        "label": "base16-catppuccin-frappe",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-catppuccin-frappe.json"
+      },
+      {
+        "label": "base16-catppuccin-latte",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-catppuccin-latte.json"
+      },
+      {
+        "label": "base16-catppuccin-macchiato",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-catppuccin-macchiato.json"
+      },
+      {
+        "label": "base16-catppuccin-mocha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-catppuccin-mocha.json"
+      },
+      {
+        "label": "base16-chalk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-chalk.json"
+      },
+      {
+        "label": "base16-charcoal-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-charcoal-dark.json"
+      },
+      {
+        "label": "base16-charcoal-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-charcoal-light.json"
+      },
+      {
+        "label": "base16-chicago-day",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-chicago-day.json"
+      },
+      {
+        "label": "base16-chicago-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-chicago-night.json"
+      },
+      {
+        "label": "base16-chinoiserie-midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-chinoiserie-midnight.json"
+      },
+      {
+        "label": "base16-chinoiserie-morandi",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-chinoiserie-morandi.json"
+      },
+      {
+        "label": "base16-chinoiserie-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-chinoiserie-night.json"
+      },
+      {
+        "label": "base16-chinoiserie",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-chinoiserie.json"
+      },
+      {
+        "label": "base16-circus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-circus.json"
+      },
+      {
+        "label": "base16-classic-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-classic-dark.json"
+      },
+      {
+        "label": "base16-classic-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-classic-light.json"
+      },
+      {
+        "label": "base16-codeschool",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-codeschool.json"
+      },
+      {
+        "label": "base16-colors",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-colors.json"
+      },
+      {
+        "label": "base16-cupcake",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-cupcake.json"
+      },
+      {
+        "label": "base16-cupertino",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-cupertino.json"
+      },
+      {
+        "label": "base16-cyberpunk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-cyberpunk.json"
+      },
+      {
+        "label": "base16-da-one-black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-da-one-black.json"
+      },
+      {
+        "label": "base16-da-one-gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-da-one-gray.json"
+      },
+      {
+        "label": "base16-da-one-ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-da-one-ocean.json"
+      },
+      {
+        "label": "base16-da-one-paper",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-da-one-paper.json"
+      },
+      {
+        "label": "base16-da-one-sea",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-da-one-sea.json"
+      },
+      {
+        "label": "base16-da-one-white",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-da-one-white.json"
+      },
+      {
+        "label": "base16-danqing-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-danqing-light.json"
+      },
+      {
+        "label": "base16-danqing",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-danqing.json"
+      },
+      {
+        "label": "base16-darcula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-darcula.json"
+      },
+      {
+        "label": "base16-darkmoss",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-darkmoss.json"
+      },
+      {
+        "label": "base16-darktooth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-darktooth.json"
+      },
+      {
+        "label": "base16-darkviolet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-darkviolet.json"
+      },
+      {
+        "label": "base16-decaf",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-decaf.json"
+      },
+      {
+        "label": "base16-deep-oceanic-next",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-deep-oceanic-next.json"
+      },
+      {
+        "label": "base16-default-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-default-dark.json"
+      },
+      {
+        "label": "base16-default-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-default-light.json"
+      },
+      {
+        "label": "base16-digital-rain",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-digital-rain.json"
+      },
+      {
+        "label": "base16-dirtysea",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-dirtysea.json"
+      },
+      {
+        "label": "base16-dracula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-dracula.json"
+      },
+      {
+        "label": "base16-edge-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-edge-dark.json"
+      },
+      {
+        "label": "base16-edge-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-edge-light.json"
+      },
+      {
+        "label": "base16-eighties",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-eighties.json"
+      },
+      {
+        "label": "base16-eldritch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-eldritch.json"
+      },
+      {
+        "label": "base16-embers-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-embers-light.json"
+      },
+      {
+        "label": "base16-embers",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-embers.json"
+      },
+      {
+        "label": "base16-emil",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-emil.json"
+      },
+      {
+        "label": "base16-equilibrium-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-equilibrium-dark.json"
+      },
+      {
+        "label": "base16-equilibrium-gray-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-equilibrium-gray-dark.json"
+      },
+      {
+        "label": "base16-equilibrium-gray-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-equilibrium-gray-light.json"
+      },
+      {
+        "label": "base16-equilibrium-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-equilibrium-light.json"
+      },
+      {
+        "label": "base16-eris",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-eris.json"
+      },
+      {
+        "label": "base16-espresso",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-espresso.json"
+      },
+      {
+        "label": "base16-eva-dim",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-eva-dim.json"
+      },
+      {
+        "label": "base16-eva",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-eva.json"
+      },
+      {
+        "label": "base16-evenok-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-evenok-dark.json"
+      },
+      {
+        "label": "base16-everforest-dark-hard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-everforest-dark-hard.json"
+      },
+      {
+        "label": "base16-everforest-dark-medium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-everforest-dark-medium.json"
+      },
+      {
+        "label": "base16-everforest-dark-soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-everforest-dark-soft.json"
+      },
+      {
+        "label": "base16-everforest-light-hard",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-everforest-light-hard.json"
+      },
+      {
+        "label": "base16-everforest-light-medium",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-everforest-light-medium.json"
+      },
+      {
+        "label": "base16-everforest-light-soft",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-everforest-light-soft.json"
+      },
+      {
+        "label": "base16-everforest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-everforest.json"
+      },
+      {
+        "label": "base16-flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-flat.json"
+      },
+      {
+        "label": "base16-flexoki-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-flexoki-dark.json"
+      },
+      {
+        "label": "base16-flexoki-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-flexoki-light.json"
+      },
+      {
+        "label": "base16-framer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-framer.json"
+      },
+      {
+        "label": "base16-fruit-soda",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-fruit-soda.json"
+      },
+      {
+        "label": "base16-gigavolt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gigavolt.json"
+      },
+      {
+        "label": "base16-github-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-github-dark.json"
+      },
+      {
+        "label": "base16-github",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-github.json"
+      },
+      {
+        "label": "base16-google-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-google-dark.json"
+      },
+      {
+        "label": "base16-google-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-google-light.json"
+      },
+      {
+        "label": "base16-gotham",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gotham.json"
+      },
+      {
+        "label": "base16-grayscale-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-grayscale-dark.json"
+      },
+      {
+        "label": "base16-grayscale-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-grayscale-light.json"
+      },
+      {
+        "label": "base16-greenscreen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-greenscreen.json"
+      },
+      {
+        "label": "base16-gruber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruber.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-hard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-dark-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-medium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-dark-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-pale",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-dark-pale.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-dark-soft.json"
+      },
+      {
+        "label": "base16-gruvbox-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-dark.json"
+      },
+      {
+        "label": "base16-gruvbox-light-hard",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-gruvbox-light-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-light-medium",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-gruvbox-light-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-light-soft",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-gruvbox-light-soft.json"
+      },
+      {
+        "label": "base16-gruvbox-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-gruvbox-light.json"
+      },
+      {
+        "label": "base16-gruvbox-material-dark-hard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-material-dark-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-material-dark-medium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-material-dark-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-material-dark-soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-gruvbox-material-dark-soft.json"
+      },
+      {
+        "label": "base16-gruvbox-material-light-hard",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-gruvbox-material-light-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-material-light-medium",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-gruvbox-material-light-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-material-light-soft",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-gruvbox-material-light-soft.json"
+      },
+      {
+        "label": "base16-hardcore",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-hardcore.json"
+      },
+      {
+        "label": "base16-hardhacker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-hardhacker.json"
+      },
+      {
+        "label": "base16-harmonic16-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-harmonic16-dark.json"
+      },
+      {
+        "label": "base16-harmonic16-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-harmonic16-light.json"
+      },
+      {
+        "label": "base16-heetch-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-heetch-light.json"
+      },
+      {
+        "label": "base16-heetch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-heetch.json"
+      },
+      {
+        "label": "base16-helios",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-helios.json"
+      },
+      {
+        "label": "base16-hopscotch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-hopscotch.json"
+      },
+      {
+        "label": "base16-horizon-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-horizon-dark.json"
+      },
+      {
+        "label": "base16-horizon-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-horizon-light.json"
+      },
+      {
+        "label": "base16-horizon-terminal-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-horizon-terminal-dark.json"
+      },
+      {
+        "label": "base16-horizon-terminal-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-horizon-terminal-light.json"
+      },
+      {
+        "label": "base16-humanoid-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-humanoid-dark.json"
+      },
+      {
+        "label": "base16-humanoid-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-humanoid-light.json"
+      },
+      {
+        "label": "base16-ia-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-ia-dark.json"
+      },
+      {
+        "label": "base16-ia-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-ia-light.json"
+      },
+      {
+        "label": "base16-icy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-icy.json"
+      },
+      {
+        "label": "base16-irblack",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-irblack.json"
+      },
+      {
+        "label": "base16-isotope",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-isotope.json"
+      },
+      {
+        "label": "base16-jabuti",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-jabuti.json"
+      },
+      {
+        "label": "base16-kanagawa-dragon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-kanagawa-dragon.json"
+      },
+      {
+        "label": "base16-kanagawa",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-kanagawa.json"
+      },
+      {
+        "label": "base16-katy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-katy.json"
+      },
+      {
+        "label": "base16-kimber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-kimber.json"
+      },
+      {
+        "label": "base16-kissa-latte",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-kissa-latte.json"
+      },
+      {
+        "label": "base16-kissa-macchiato",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-kissa-macchiato.json"
+      },
+      {
+        "label": "base16-lime",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-lime.json"
+      },
+      {
+        "label": "base16-linux-vt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-linux-vt.json"
+      },
+      {
+        "label": "base16-macintosh",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-macintosh.json"
+      },
+      {
+        "label": "base16-marrakesh",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-marrakesh.json"
+      },
+      {
+        "label": "base16-materia",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-materia.json"
+      },
+      {
+        "label": "base16-material-darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-material-darker.json"
+      },
+      {
+        "label": "base16-material-lighter",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-material-lighter.json"
+      },
+      {
+        "label": "base16-material-palenight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-material-palenight.json"
+      },
+      {
+        "label": "base16-material-vivid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-material-vivid.json"
+      },
+      {
+        "label": "base16-material",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-material.json"
+      },
+      {
+        "label": "base16-measured-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-measured-dark.json"
+      },
+      {
+        "label": "base16-measured-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-measured-light.json"
+      },
+      {
+        "label": "base16-mellow-purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-mellow-purple.json"
+      },
+      {
+        "label": "base16-mexico-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-mexico-light.json"
+      },
+      {
+        "label": "base16-mocha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-mocha.json"
+      },
+      {
+        "label": "base16-monokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-monokai.json"
+      },
+      {
+        "label": "base16-moonlight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-moonlight.json"
+      },
+      {
+        "label": "base16-mountain",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-mountain.json"
+      },
+      {
+        "label": "base16-nebula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-nebula.json"
+      },
+      {
+        "label": "base16-nord-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-nord-light.json"
+      },
+      {
+        "label": "base16-nord",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-nord.json"
+      },
+      {
+        "label": "base16-nova",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-nova.json"
+      },
+      {
+        "label": "base16-ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-ocean.json"
+      },
+      {
+        "label": "base16-oceanicnext",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-oceanicnext.json"
+      },
+      {
+        "label": "base16-one-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-one-light.json"
+      },
+      {
+        "label": "base16-onedark-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-onedark-dark.json"
+      },
+      {
+        "label": "base16-onedark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-onedark.json"
+      },
+      {
+        "label": "base16-outrun-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-outrun-dark.json"
+      },
+      {
+        "label": "base16-oxocarbon-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-oxocarbon-dark.json"
+      },
+      {
+        "label": "base16-oxocarbon-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-oxocarbon-light.json"
+      },
+      {
+        "label": "base16-pandora",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-pandora.json"
+      },
+      {
+        "label": "base16-papercolor-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-papercolor-dark.json"
+      },
+      {
+        "label": "base16-papercolor-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-papercolor-light.json"
+      },
+      {
+        "label": "base16-paraiso",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-paraiso.json"
+      },
+      {
+        "label": "base16-pasque",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-pasque.json"
+      },
+      {
+        "label": "base16-penumbra-dark-contrast-plus-plus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-penumbra-dark-contrast-plus-plus.json"
+      },
+      {
+        "label": "base16-penumbra-dark-contrast-plus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-penumbra-dark-contrast-plus.json"
+      },
+      {
+        "label": "base16-penumbra-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-penumbra-dark.json"
+      },
+      {
+        "label": "base16-penumbra-light-contrast-plus-plus",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-penumbra-light-contrast-plus-plus.json"
+      },
+      {
+        "label": "base16-penumbra-light-contrast-plus",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-penumbra-light-contrast-plus.json"
+      },
+      {
+        "label": "base16-penumbra-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-penumbra-light.json"
+      },
+      {
+        "label": "base16-phd",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-phd.json"
+      },
+      {
+        "label": "base16-pico",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-pico.json"
+      },
+      {
+        "label": "base16-pinky",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-pinky.json"
+      },
+      {
+        "label": "base16-pop",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-pop.json"
+      },
+      {
+        "label": "base16-porple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-porple.json"
+      },
+      {
+        "label": "base16-precious-dark-eleven",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-precious-dark-eleven.json"
+      },
+      {
+        "label": "base16-precious-dark-fifteen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-precious-dark-fifteen.json"
+      },
+      {
+        "label": "base16-precious-light-warm",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-precious-light-warm.json"
+      },
+      {
+        "label": "base16-precious-light-white",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-precious-light-white.json"
+      },
+      {
+        "label": "base16-primer-dark-dimmed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-primer-dark-dimmed.json"
+      },
+      {
+        "label": "base16-primer-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-primer-dark.json"
+      },
+      {
+        "label": "base16-primer-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-primer-light.json"
+      },
+      {
+        "label": "base16-purpledream",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-purpledream.json"
+      },
+      {
+        "label": "base16-qualia",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-qualia.json"
+      },
+      {
+        "label": "base16-railscasts",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-railscasts.json"
+      },
+      {
+        "label": "base16-rebecca",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-rebecca.json"
+      },
+      {
+        "label": "base16-rose-pine-dawn",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-rose-pine-dawn.json"
+      },
+      {
+        "label": "base16-rose-pine-moon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-rose-pine-moon.json"
+      },
+      {
+        "label": "base16-rose-pine",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-rose-pine.json"
+      },
+      {
+        "label": "base16-saga",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-saga.json"
+      },
+      {
+        "label": "base16-sagelight",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-sagelight.json"
+      },
+      {
+        "label": "base16-sakura",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-sakura.json"
+      },
+      {
+        "label": "base16-sandcastle",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-sandcastle.json"
+      },
+      {
+        "label": "base16-selenized-black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-selenized-black.json"
+      },
+      {
+        "label": "base16-selenized-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-selenized-dark.json"
+      },
+      {
+        "label": "base16-selenized-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-selenized-light.json"
+      },
+      {
+        "label": "base16-selenized-white",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-selenized-white.json"
+      },
+      {
+        "label": "base16-seti",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-seti.json"
+      },
+      {
+        "label": "base16-shades-of-purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-shades-of-purple.json"
+      },
+      {
+        "label": "base16-shadesmear-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-shadesmear-dark.json"
+      },
+      {
+        "label": "base16-shadesmear-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-shadesmear-light.json"
+      },
+      {
+        "label": "base16-shapeshifter",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-shapeshifter.json"
+      },
+      {
+        "label": "base16-silk-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-silk-dark.json"
+      },
+      {
+        "label": "base16-silk-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-silk-light.json"
+      },
+      {
+        "label": "base16-snazzy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-snazzy.json"
+      },
+      {
+        "label": "base16-soft-server",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-soft-server.json"
+      },
+      {
+        "label": "base16-solarflare-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-solarflare-light.json"
+      },
+      {
+        "label": "base16-solarflare",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-solarflare.json"
+      },
+      {
+        "label": "base16-solarized-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-solarized-dark.json"
+      },
+      {
+        "label": "base16-solarized-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-solarized-light.json"
+      },
+      {
+        "label": "base16-spaceduck",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-spaceduck.json"
+      },
+      {
+        "label": "base16-spacemacs",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-spacemacs.json"
+      },
+      {
+        "label": "base16-sparky",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-sparky.json"
+      },
+      {
+        "label": "base16-standardized-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-standardized-dark.json"
+      },
+      {
+        "label": "base16-standardized-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-standardized-light.json"
+      },
+      {
+        "label": "base16-stella",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-stella.json"
+      },
+      {
+        "label": "base16-still-alive",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-still-alive.json"
+      },
+      {
+        "label": "base16-summercamp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-summercamp.json"
+      },
+      {
+        "label": "base16-summerfruit-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-summerfruit-dark.json"
+      },
+      {
+        "label": "base16-summerfruit-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-summerfruit-light.json"
+      },
+      {
+        "label": "base16-swamp-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-swamp-dark.json"
+      },
+      {
+        "label": "base16-swamp-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-swamp-light.json"
+      },
+      {
+        "label": "base16-synth-midnight-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-synth-midnight-dark.json"
+      },
+      {
+        "label": "base16-synth-midnight-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-synth-midnight-light.json"
+      },
+      {
+        "label": "base16-tango",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tango.json"
+      },
+      {
+        "label": "base16-tarot",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tarot.json"
+      },
+      {
+        "label": "base16-tender",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tender.json"
+      },
+      {
+        "label": "base16-terracotta-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-terracotta-dark.json"
+      },
+      {
+        "label": "base16-terracotta",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-terracotta.json"
+      },
+      {
+        "label": "base16-tokyo-city-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyo-city-dark.json"
+      },
+      {
+        "label": "base16-tokyo-city-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-tokyo-city-light.json"
+      },
+      {
+        "label": "base16-tokyo-city-terminal-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyo-city-terminal-dark.json"
+      },
+      {
+        "label": "base16-tokyo-city-terminal-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-tokyo-city-terminal-light.json"
+      },
+      {
+        "label": "base16-tokyo-night-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyo-night-dark.json"
+      },
+      {
+        "label": "base16-tokyo-night-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-tokyo-night-light.json"
+      },
+      {
+        "label": "base16-tokyo-night-moon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyo-night-moon.json"
+      },
+      {
+        "label": "base16-tokyo-night-storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyo-night-storm.json"
+      },
+      {
+        "label": "base16-tokyo-night-terminal-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyo-night-terminal-dark.json"
+      },
+      {
+        "label": "base16-tokyo-night-terminal-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-tokyo-night-terminal-light.json"
+      },
+      {
+        "label": "base16-tokyo-night-terminal-storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyo-night-terminal-storm.json"
+      },
+      {
+        "label": "base16-tokyodark-terminal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyodark-terminal.json"
+      },
+      {
+        "label": "base16-tokyodark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tokyodark.json"
+      },
+      {
+        "label": "base16-tomorrow-night-eighties",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tomorrow-night-eighties.json"
+      },
+      {
+        "label": "base16-tomorrow-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tomorrow-night.json"
+      },
+      {
+        "label": "base16-tomorrow",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-tomorrow.json"
+      },
+      {
+        "label": "base16-tube",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-tube.json"
+      },
+      {
+        "label": "base16-twilight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-twilight.json"
+      },
+      {
+        "label": "base16-unikitty-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-unikitty-dark.json"
+      },
+      {
+        "label": "base16-unikitty-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-unikitty-light.json"
+      },
+      {
+        "label": "base16-unikitty-reversible",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-unikitty-reversible.json"
+      },
+      {
+        "label": "base16-uwunicorn",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-uwunicorn.json"
+      },
+      {
+        "label": "base16-valua",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-valua.json"
+      },
+      {
+        "label": "base16-vesper",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-vesper.json"
+      },
+      {
+        "label": "base16-vice",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-vice.json"
+      },
+      {
+        "label": "base16-vulcan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-vulcan.json"
+      },
+      {
+        "label": "base16-windows-10-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-windows-10-light.json"
+      },
+      {
+        "label": "base16-windows-10",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-windows-10.json"
+      },
+      {
+        "label": "base16-windows-95-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-windows-95-light.json"
+      },
+      {
+        "label": "base16-windows-95",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-windows-95.json"
+      },
+      {
+        "label": "base16-windows-highcontrast-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-windows-highcontrast-light.json"
+      },
+      {
+        "label": "base16-windows-highcontrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-windows-highcontrast.json"
+      },
+      {
+        "label": "base16-windows-nt-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-windows-nt-light.json"
+      },
+      {
+        "label": "base16-windows-nt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-windows-nt.json"
+      },
+      {
+        "label": "base16-woodland",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-woodland.json"
+      },
+      {
+        "label": "base16-xcode-dusk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-xcode-dusk.json"
+      },
+      {
+        "label": "base16-yesterday-bright",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-yesterday-bright.json"
+      },
+      {
+        "label": "base16-yesterday-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-yesterday-night.json"
+      },
+      {
+        "label": "base16-yesterday",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-yesterday.json"
+      },
+      {
+        "label": "base16-zenbones",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-zenbones.json"
+      },
+      {
+        "label": "base16-zenburn",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-zenburn.json"
+      },
+      {
+        "label": "base24-0x96f",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-0x96f.json"
+      },
+      {
+        "label": "base24-3024-day",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-3024-day.json"
+      },
+      {
+        "label": "base24-3024-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-3024-night.json"
+      },
+      {
+        "label": "base24-adventure-time",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-adventure-time.json"
+      },
+      {
+        "label": "base24-alien-blood",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-alien-blood.json"
+      },
+      {
+        "label": "base24-alucard",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-alucard.json"
+      },
+      {
+        "label": "base24-argonaut",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-argonaut.json"
+      },
+      {
+        "label": "base24-arthur",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-arthur.json"
+      },
+      {
+        "label": "base24-atelier-sulphurpool",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-atelier-sulphurpool.json"
+      },
+      {
+        "label": "base24-ayu-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ayu-dark.json"
+      },
+      {
+        "label": "base24-ayu-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-ayu-light.json"
+      },
+      {
+        "label": "base24-ayu-mirage",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ayu-mirage.json"
+      },
+      {
+        "label": "base24-ayu",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ayu.json"
+      },
+      {
+        "label": "base24-banana-blueberry",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-banana-blueberry.json"
+      },
+      {
+        "label": "base24-batman",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-batman.json"
+      },
+      {
+        "label": "base24-birds-of-paradise",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-birds-of-paradise.json"
+      },
+      {
+        "label": "base24-blazer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-blazer.json"
+      },
+      {
+        "label": "base24-blue-berry-pie",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-blue-berry-pie.json"
+      },
+      {
+        "label": "base24-blue-matrix",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-blue-matrix.json"
+      },
+      {
+        "label": "base24-bluloco-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-bluloco-dark.json"
+      },
+      {
+        "label": "base24-bluloco-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-bluloco-light.json"
+      },
+      {
+        "label": "base24-borland",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-borland.json"
+      },
+      {
+        "label": "base24-breeze",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-breeze.json"
+      },
+      {
+        "label": "base24-broadcast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-broadcast.json"
+      },
+      {
+        "label": "base24-brogrammer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-brogrammer.json"
+      },
+      {
+        "label": "base24-builtin-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-builtin-dark.json"
+      },
+      {
+        "label": "base24-builtin-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-builtin-light.json"
+      },
+      {
+        "label": "base24-builtin-pastel-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-builtin-pastel-dark.json"
+      },
+      {
+        "label": "base24-builtin-solarized-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-builtin-solarized-dark.json"
+      },
+      {
+        "label": "base24-builtin-solarized-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-builtin-solarized-light.json"
+      },
+      {
+        "label": "base24-builtin-tango-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-builtin-tango-dark.json"
+      },
+      {
+        "label": "base24-builtin-tango-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-builtin-tango-light.json"
+      },
+      {
+        "label": "base24-catppuccin-frappe",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-catppuccin-frappe.json"
+      },
+      {
+        "label": "base24-catppuccin-latte",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-catppuccin-latte.json"
+      },
+      {
+        "label": "base24-catppuccin-macchiato",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-catppuccin-macchiato.json"
+      },
+      {
+        "label": "base24-catppuccin-mocha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-catppuccin-mocha.json"
+      },
+      {
+        "label": "base24-chalk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-chalk.json"
+      },
+      {
+        "label": "base24-chalkboard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-chalkboard.json"
+      },
+      {
+        "label": "base24-challenger-deep",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-challenger-deep.json"
+      },
+      {
+        "label": "base24-ciapre",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ciapre.json"
+      },
+      {
+        "label": "base24-clrs",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-clrs.json"
+      },
+      {
+        "label": "base24-cobalt-neon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-cobalt-neon.json"
+      },
+      {
+        "label": "base24-cobalt2",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-cobalt2.json"
+      },
+      {
+        "label": "base24-crayon-pony-fish",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-crayon-pony-fish.json"
+      },
+      {
+        "label": "base24-cyberdyne",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-cyberdyne.json"
+      },
+      {
+        "label": "base24-dark-plus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-dark-plus.json"
+      },
+      {
+        "label": "base24-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-dark.json"
+      },
+      {
+        "label": "base24-deep-oceanic-next",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-deep-oceanic-next.json"
+      },
+      {
+        "label": "base24-deep",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-deep.json"
+      },
+      {
+        "label": "base24-desert",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-desert.json"
+      },
+      {
+        "label": "base24-dimmed-monokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-dimmed-monokai.json"
+      },
+      {
+        "label": "base24-dracula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-dracula.json"
+      },
+      {
+        "label": "base24-earthsong",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-earthsong.json"
+      },
+      {
+        "label": "base24-eldritch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-eldritch.json"
+      },
+      {
+        "label": "base24-elemental",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-elemental.json"
+      },
+      {
+        "label": "base24-elementary",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-elementary.json"
+      },
+      {
+        "label": "base24-embarcadero",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-embarcadero.json"
+      },
+      {
+        "label": "base24-encom",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-encom.json"
+      },
+      {
+        "label": "base24-espresso-libre",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-espresso-libre.json"
+      },
+      {
+        "label": "base24-espresso",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-espresso.json"
+      },
+      {
+        "label": "base24-fideloper",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-fideloper.json"
+      },
+      {
+        "label": "base24-firefox-dev",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-firefox-dev.json"
+      },
+      {
+        "label": "base24-fish-tank",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-fish-tank.json"
+      },
+      {
+        "label": "base24-flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-flat.json"
+      },
+      {
+        "label": "base24-flatland",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-flatland.json"
+      },
+      {
+        "label": "base24-flexoki-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-flexoki-dark.json"
+      },
+      {
+        "label": "base24-flexoki-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-flexoki-light.json"
+      },
+      {
+        "label": "base24-floraverse",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-floraverse.json"
+      },
+      {
+        "label": "base24-forest-blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-forest-blue.json"
+      },
+      {
+        "label": "base24-framer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-framer.json"
+      },
+      {
+        "label": "base24-front-end-delight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-front-end-delight.json"
+      },
+      {
+        "label": "base24-fun-forrest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-fun-forrest.json"
+      },
+      {
+        "label": "base24-galaxy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-galaxy.json"
+      },
+      {
+        "label": "base24-github-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-github-dark.json"
+      },
+      {
+        "label": "base24-github-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-github-light.json"
+      },
+      {
+        "label": "base24-github",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-github.json"
+      },
+      {
+        "label": "base24-grape",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-grape.json"
+      },
+      {
+        "label": "base24-gruvbox-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-gruvbox-dark.json"
+      },
+      {
+        "label": "base24-gruvbox-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-gruvbox-light.json"
+      },
+      {
+        "label": "base24-hacktober",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-hacktober.json"
+      },
+      {
+        "label": "base24-hardcore",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-hardcore.json"
+      },
+      {
+        "label": "base24-highway",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-highway.json"
+      },
+      {
+        "label": "base24-hipster-green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-hipster-green.json"
+      },
+      {
+        "label": "base24-hivacruz",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-hivacruz.json"
+      },
+      {
+        "label": "base24-homebrew",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-homebrew.json"
+      },
+      {
+        "label": "base24-hopscotch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-hopscotch.json"
+      },
+      {
+        "label": "base24-hurtado",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-hurtado.json"
+      },
+      {
+        "label": "base24-hybrid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-hybrid.json"
+      },
+      {
+        "label": "base24-ic-green-ppl",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ic-green-ppl.json"
+      },
+      {
+        "label": "base24-ic-orange-ppl",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ic-orange-ppl.json"
+      },
+      {
+        "label": "base24-idea",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-idea.json"
+      },
+      {
+        "label": "base24-idle-toes",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-idle-toes.json"
+      },
+      {
+        "label": "base24-jackie-brown",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-jackie-brown.json"
+      },
+      {
+        "label": "base24-japanesque",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-japanesque.json"
+      },
+      {
+        "label": "base24-jellybeans",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-jellybeans.json"
+      },
+      {
+        "label": "base24-jet-brains-darcula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-jet-brains-darcula.json"
+      },
+      {
+        "label": "base24-kanagawa-dragon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-kanagawa-dragon.json"
+      },
+      {
+        "label": "base24-kibble",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-kibble.json"
+      },
+      {
+        "label": "base24-lab-fox",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-lab-fox.json"
+      },
+      {
+        "label": "base24-laser",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-laser.json"
+      },
+      {
+        "label": "base24-later-this-evening",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-later-this-evening.json"
+      },
+      {
+        "label": "base24-lavandula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-lavandula.json"
+      },
+      {
+        "label": "base24-lovelace",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-lovelace.json"
+      },
+      {
+        "label": "base24-man-page",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-man-page.json"
+      },
+      {
+        "label": "base24-material-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-material-dark.json"
+      },
+      {
+        "label": "base24-material",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-material.json"
+      },
+      {
+        "label": "base24-mathias",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-mathias.json"
+      },
+      {
+        "label": "base24-medailion",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-medailion.json"
+      },
+      {
+        "label": "base24-medallion",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-medallion.json"
+      },
+      {
+        "label": "base24-mission-brogue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-mission-brogue.json"
+      },
+      {
+        "label": "base24-misterioso",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-misterioso.json"
+      },
+      {
+        "label": "base24-molokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-molokai.json"
+      },
+      {
+        "label": "base24-mona-lisa",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-mona-lisa.json"
+      },
+      {
+        "label": "base24-monokai-vivid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-monokai-vivid.json"
+      },
+      {
+        "label": "base24-mountain",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-mountain.json"
+      },
+      {
+        "label": "base24-night-lion-v1",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-night-lion-v1.json"
+      },
+      {
+        "label": "base24-night-lion-v2",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-night-lion-v2.json"
+      },
+      {
+        "label": "base24-night-owlish-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-night-owlish-light.json"
+      },
+      {
+        "label": "base24-nocturnal-winter",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-nocturnal-winter.json"
+      },
+      {
+        "label": "base24-obsidian",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-obsidian.json"
+      },
+      {
+        "label": "base24-ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ocean.json"
+      },
+      {
+        "label": "base24-oceanic-material",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-oceanic-material.json"
+      },
+      {
+        "label": "base24-ollie",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ollie.json"
+      },
+      {
+        "label": "base24-one-black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-one-black.json"
+      },
+      {
+        "label": "base24-one-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-one-dark.json"
+      },
+      {
+        "label": "base24-one-half-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-one-half-light.json"
+      },
+      {
+        "label": "base24-one-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-one-light.json"
+      },
+      {
+        "label": "base24-operator-mono-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-operator-mono-dark.json"
+      },
+      {
+        "label": "base24-pandora",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-pandora.json"
+      },
+      {
+        "label": "base24-papercolor-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-papercolor-dark.json"
+      },
+      {
+        "label": "base24-papercolor-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-papercolor-light.json"
+      },
+      {
+        "label": "base24-paul-millr",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-paul-millr.json"
+      },
+      {
+        "label": "base24-pencil-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-pencil-dark.json"
+      },
+      {
+        "label": "base24-pencil-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-pencil-light.json"
+      },
+      {
+        "label": "base24-piatto-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-piatto-light.json"
+      },
+      {
+        "label": "base24-pnevma",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-pnevma.json"
+      },
+      {
+        "label": "base24-pro-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-pro-light.json"
+      },
+      {
+        "label": "base24-pro",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-pro.json"
+      },
+      {
+        "label": "base24-purple-rain",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-purple-rain.json"
+      },
+      {
+        "label": "base24-purplepeter",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-purplepeter.json"
+      },
+      {
+        "label": "base24-rebecca",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-rebecca.json"
+      },
+      {
+        "label": "base24-red-alert",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-red-alert.json"
+      },
+      {
+        "label": "base24-red-planet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-red-planet.json"
+      },
+      {
+        "label": "base24-red-sands",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-red-sands.json"
+      },
+      {
+        "label": "base24-rippedcasts",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-rippedcasts.json"
+      },
+      {
+        "label": "base24-royal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-royal.json"
+      },
+      {
+        "label": "base24-scarlet-protocol",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-scarlet-protocol.json"
+      },
+      {
+        "label": "base24-sea-shells",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-sea-shells.json"
+      },
+      {
+        "label": "base24-seafoam-pastel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-seafoam-pastel.json"
+      },
+      {
+        "label": "base24-shades-of-purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-shades-of-purple.json"
+      },
+      {
+        "label": "base24-shaman",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-shaman.json"
+      },
+      {
+        "label": "base24-slate",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-slate.json"
+      },
+      {
+        "label": "base24-sleepy-hollow",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-sleepy-hollow.json"
+      },
+      {
+        "label": "base24-smyck",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-smyck.json"
+      },
+      {
+        "label": "base24-soft-server",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-soft-server.json"
+      },
+      {
+        "label": "base24-solarized-dark-higher-contrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-solarized-dark-higher-contrast.json"
+      },
+      {
+        "label": "base24-solarized-dark-patched",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-solarized-dark-patched.json"
+      },
+      {
+        "label": "base24-space-gray-eighties-dull",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-space-gray-eighties-dull.json"
+      },
+      {
+        "label": "base24-space-gray-eighties",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-space-gray-eighties.json"
+      },
+      {
+        "label": "base24-space-grey-eighties-dull",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-space-grey-eighties-dull.json"
+      },
+      {
+        "label": "base24-space-grey-eighties",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-space-grey-eighties.json"
+      },
+      {
+        "label": "base24-spacedust",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-spacedust.json"
+      },
+      {
+        "label": "base24-sparky",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-sparky.json"
+      },
+      {
+        "label": "base24-spiderman",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-spiderman.json"
+      },
+      {
+        "label": "base24-square",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-square.json"
+      },
+      {
+        "label": "base24-sundried",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-sundried.json"
+      },
+      {
+        "label": "base24-tango-adapted",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-tango-adapted.json"
+      },
+      {
+        "label": "base24-tango-half-adapted",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-tango-half-adapted.json"
+      },
+      {
+        "label": "base24-terminal-basic",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-terminal-basic.json"
+      },
+      {
+        "label": "base24-thayer-bright",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-thayer-bright.json"
+      },
+      {
+        "label": "base24-thayler-bright",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-thayler-bright.json"
+      },
+      {
+        "label": "base24-the-hulk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-the-hulk.json"
+      },
+      {
+        "label": "base24-tokyo-night-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-tokyo-night-dark.json"
+      },
+      {
+        "label": "base24-tokyo-night-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-tokyo-night-light.json"
+      },
+      {
+        "label": "base24-tokyo-night-moon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-tokyo-night-moon.json"
+      },
+      {
+        "label": "base24-tokyo-night-storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-tokyo-night-storm.json"
+      },
+      {
+        "label": "base24-tomorrow-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-tomorrow-night.json"
+      },
+      {
+        "label": "base24-toy-chest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-toy-chest.json"
+      },
+      {
+        "label": "base24-treehouse",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-treehouse.json"
+      },
+      {
+        "label": "base24-twilight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-twilight.json"
+      },
+      {
+        "label": "base24-ubuntu",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ubuntu.json"
+      },
+      {
+        "label": "base24-ultra-violet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-ultra-violet.json"
+      },
+      {
+        "label": "base24-under-the-sea",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-under-the-sea.json"
+      },
+      {
+        "label": "base24-unikitty",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-unikitty.json"
+      },
+      {
+        "label": "base24-vibrant-ink",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-vibrant-ink.json"
+      },
+      {
+        "label": "base24-violet-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-violet-dark.json"
+      },
+      {
+        "label": "base24-violet-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-violet-light.json"
+      },
+      {
+        "label": "base24-warm-neon",
+        "uiTheme": "hc-light",
+        "path": "./themes/base24/base24-warm-neon.json"
+      },
+      {
+        "label": "base24-wez",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-wez.json"
+      },
+      {
+        "label": "base24-wild-cherry",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-wild-cherry.json"
+      },
+      {
+        "label": "base24-wombat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-wombat.json"
+      },
+      {
+        "label": "base24-wryan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-wryan.json"
+      },
+      {
+        "label": "base24-zenburn",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-zenburn.json"
+      },
+      {
+        "label": "tinted8-catppuccin-latte",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tinted8/tinted8-catppuccin-latte.json"
+      },
+      {
+        "label": "tinted8-catppuccin-mocha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tinted8/tinted8-catppuccin-mocha.json"
+      },
+      {
+        "label": "tinted8-gruvbox-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tinted8/tinted8-gruvbox-dark.json"
+      },
+      {
+        "label": "tinted8-nord",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tinted8/tinted8-nord.json"
+      }
+    ]
+  }
+}

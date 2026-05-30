@@ -25,12 +25,14 @@ palette:
   base0D: "70b7f6"  # blue    — functions, methods, headings    (Dark+ keyword, lightened; Lc 60)
   base0E: "d293cd"  # magenta — keywords, control flow          (Dark+ control keyword; Lc 55)
   base0F: "d7ba7d"  # gold    — deprecated, special             (Dark+ css-class/escape)
-  # ── Bright accents (base24: bright ANSI variants) ──
-  base10: "ff9894"  # bright red
-  base11: "ffad63"  # bright orange
-  base12: "e8dc7f"  # bright yellow
-  base13: "c5e88b"  # bright green
-  base14: "72d4c0"  # bright cyan
-  base15: "86ceff"  # bright blue
-  base16: "dd99ff"  # bright magenta
-  base17: "f0d88f"  # bright gold
+  # ── base24 extras: darker backgrounds + 6 bright ANSI accents ──
+  # Per base24 spec: base10/11 are darker bgs (can't go below pure black, so
+  # they stay #000000); brights are R,Y,G,C,B,M only (no bright orange/brown).
+  base10: "000000"  # darker black  (bg; degenerate on pure black)
+  base11: "000000"  # darkest black (bg)
+  base12: "ff9894"  # bright red     (ANSI 9)
+  base13: "e8dc7f"  # bright yellow  (ANSI 11)
+  base14: "c5e88b"  # bright green   (ANSI 10)
+  base15: "72d4c0"  # bright cyan    (ANSI 14)
+  base16: "86ceff"  # bright blue    (ANSI 12)
+  base17: "dd99ff"  # bright magenta (ANSI 13)

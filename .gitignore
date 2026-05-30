@@ -7,3 +7,11 @@ node_modules/
 # Secrets — marketplace tokens must come from the environment, never the repo
 .env
 *.pat
+
+# Build output regenerated inside vendored templates (the jet-black artifacts
+# we keep live in the jet-black-*/ folders, which ARE tracked)
+templates/*/themes/
+templates/*/themes-16/
+templates/*/themes-256/
+templates/*/colors/
+templates/*/ghostty-scripts/

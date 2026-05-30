@@ -67,12 +67,12 @@ def apca_lc(txt, bg):
         return 0.0 if sapc > -0.1 else (sapc + 0.027) * 100
 
 
+# base24 semantics (base10/base11 are backgrounds, not text — not checked).
 ROLES = {
     "base05": "fg/body", "base08": "red", "base09": "orange", "base0a": "yellow",
     "base0b": "green", "base0c": "cyan", "base0d": "blue", "base0e": "magenta",
-    "base0f": "gold", "base10": "br-red", "base11": "br-orange", "base12": "br-yellow",
-    "base13": "br-green", "base14": "br-cyan", "base15": "br-blue",
-    "base16": "br-magenta", "base17": "br-gold",
+    "base0f": "gold", "base12": "br-red", "base13": "br-yellow", "base14": "br-green",
+    "base15": "br-cyan", "base16": "br-blue", "base17": "br-magenta",
 }
 
 pal = parse_palette(SCHEME)
