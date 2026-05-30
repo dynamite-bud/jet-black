@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "publisher": "rudra",
   "license": "MIT",
-  "icon": "icon.png",
   "engines": { "vscode": "^1.70.0" },
   "categories": ["Themes"],
   "keywords": ["theme", "dark", "black", "base24", "pitch black"],
