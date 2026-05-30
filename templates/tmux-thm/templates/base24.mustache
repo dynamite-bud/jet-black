@@ -31,3 +31,10 @@ set -g @thm_surface_2 "#{{ base04-hex }}"
 set -g @thm_overlay_0 "#{{ base03-hex }}"
 set -g @thm_overlay_1 "#{{ base04-hex }}"
 set -g @thm_overlay_2 "#{{ base04-hex }}"
+
+# Subtle window status (dark-only): the active window is a dark-grey fill with a
+# bold colored number — no bright fill that glares on pure black. The last-active
+# window goes neutral grey (kills the floating orange number). Overrides the
+# catppuccin-style window status from .tmux.conf, so source this AFTER it.
+set -g window-status-current-style "bg=#{{ base02-hex }},fg=#{{ base0D-hex }},bold"
+set -g window-status-last-style "bg=default,fg=#{{ base04-hex }}"

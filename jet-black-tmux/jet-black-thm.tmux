@@ -31,3 +31,10 @@ set -g @thm_surface_2 "#808080"
 set -g @thm_overlay_0 "#666666"
 set -g @thm_overlay_1 "#808080"
 set -g @thm_overlay_2 "#808080"
+
+# Subtle window status (dark-only): the active window is a dark-grey fill with a
+# bold colored number — no bright fill that glares on pure black. The last-active
+# window goes neutral grey (kills the floating orange number). Overrides the
+# catppuccin-style window status from .tmux.conf, so source this AFTER it.
+set -g window-status-current-style "bg=#2a2a2a,fg=#50b4ff,bold"
+set -g window-status-last-style "bg=default,fg=#808080"
