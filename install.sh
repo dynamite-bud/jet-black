@@ -44,10 +44,9 @@ for pair in "vscode $HOME/.vscode/extensions" "cursor $HOME/.cursor/extensions";
   echo "$1     → linked into $2 (restart editor, pick 'Jet Black')"
 done
 echo
-# Make the editors auto-switch with the OS: dark = Jet Black, light = a theme of
-# your choice (default GitHub Light Default; override with JET_BLACK_LIGHT_THEME).
-echo "editors   → enabling OS auto-switch (dark=Jet Black, light=${JET_BLACK_LIGHT_THEME:-GitHub Light Default})"
-python3 "$ROOT/dev/setup-editor-autoswitch.py" "${JET_BLACK_LIGHT_THEME:-GitHub Light Default}"
+# Make the editors auto-switch with the OS: dark = Jet Black, light = GitHub Light Default.
+echo "editors   → enabling OS auto-switch (dark=Jet Black, light=GitHub Light Default)"
+python3 "$ROOT/dev/setup-editor-autoswitch.py"
 echo
 
 # ── atuin ──────────────────────────────────────────────────────────────────

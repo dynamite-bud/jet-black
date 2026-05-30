@@ -1,25 +1,24 @@
 #!/usr/bin/env python3
 """Make Cursor + VS Code auto-switch their theme with the OS appearance:
     dark  -> "Jet Black"            (this theme)
-    light -> <light-theme>          (default "GitHub Light Default")
+    light -> "GitHub Light Default"
 
 Sets, in each editor's user settings.json:
     window.autoDetectColorScheme       = true
     workbench.preferredDarkColorTheme  = "Jet Black"
-    workbench.preferredLightColorTheme = <light-theme>
+    workbench.preferredLightColorTheme = "GitHub Light Default"
 
 Idempotent, and preserves the existing file: settings.json is JSONC (comments,
 trailing commas), so we edit by targeted regex instead of reparsing/rewriting
 (which would drop the user's comments and ordering).
 
-Usage: setup-editor-autoswitch.py [light-theme-name]
+Usage: setup-editor-autoswitch.py
 """
 import json
 import os
 import re
-import sys
 
-LIGHT = sys.argv[1] if len(sys.argv) > 1 else "GitHub Light Default"
+LIGHT = "GitHub Light Default"
 DESIRED = {
     "window.autoDetectColorScheme": True,
     "workbench.preferredDarkColorTheme": "Jet Black",
