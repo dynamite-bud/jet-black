@@ -1,55 +1,144 @@
-# {{ scheme-name }} — Starship theme
-# Scheme author: {{ scheme-author }}  ·  System: {{ scheme-system }}
-# Template author: jet-black (https://github.com/rudra/jet-black)
-#
-# Use as a full config (STARSHIP_CONFIG=.../jet-black.toml) or copy the
-# [palettes.jet-black] block + `palette` line into your own starship.toml.
+# {{ scheme-name }} — Starship prompt (jet-black)
+# Scheme author: {{ scheme-author }}
+# A full prompt theme: module layout mirrors a Catppuccin-style design, recolored
+# via [palettes.jet-black]. Use as STARSHIP_CONFIG, or copy the palette block +
+# `palette` line into your own starship.toml (module styles reference the
+# catppuccin-compatible color names below).
+"$schema" = 'https://starship.rs/config-schema.json'
 
-palette = "jet-black"
-
-[palettes.jet-black]
-black   = "#{{ base00-hex }}"
-bg      = "#{{ base01-hex }}"
-sel     = "#{{ base02-hex }}"
-muted   = "#{{ base03-hex }}"
-subtle  = "#{{ base04-hex }}"
-fg      = "#{{ base05-hex }}"
-white   = "#{{ base07-hex }}"
-red     = "#{{ base08-hex }}"
-orange  = "#{{ base09-hex }}"
-yellow  = "#{{ base0A-hex }}"
-green   = "#{{ base0B-hex }}"
-cyan    = "#{{ base0C-hex }}"
-blue    = "#{{ base0D-hex }}"
-magenta = "#{{ base0E-hex }}"
-gold    = "#{{ base0F-hex }}"
-
-[character]
-success_symbol = "[❯](bold green)"
-error_symbol   = "[❯](bold red)"
-vimcmd_symbol  = "[❮](bold yellow)"
+format = """$python$nodejs$rust$golang$java$c$php$kotlin$haskell$docker_context$conda$character"""
+right_format = """$time"""
+add_newline = false
+command_timeout = 2000
+palette = 'jet-black'
 
 [directory]
-style = "bold blue"
+style = "bg:peach fg:crust"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
 
 [git_branch]
-style = "bold magenta"
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
 
 [git_status]
-style = "bold red"
+style = "bg:yellow"
+format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
 
-[git_state]
-style = "bold orange"
+[nodejs]
+symbol = ""
+style = "fg:green"
+format = '[$symbol $version ]($style)'
 
-[cmd_duration]
-style = "bold yellow"
+[c]
+symbol = " "
+style = "fg:blue"
+format = '[$symbol $version ]($style)'
 
-[hostname]
-style = "bold green"
+[rust]
+symbol = ""
+style = "fg:peach"
+format = '[$symbol $version ]($style)'
 
-[username]
-style_user = "bold cyan"
-style_root = "bold red"
+[golang]
+symbol = ""
+style = "fg:sapphire"
+format = '[$symbol $version ]($style)'
+
+[php]
+symbol = ""
+style = "fg:lavender"
+format = '[$symbol $version ]($style)'
+
+[java]
+symbol = " "
+style = "fg:red"
+format = '[$symbol $version ]($style)'
+
+[kotlin]
+symbol = ""
+style = "fg:mauve"
+format = '[$symbol $version ]($style)'
+
+[haskell]
+symbol = ""
+style = "fg:pink"
+format = '[$symbol $version ]($style)'
+
+[python]
+symbol = ""
+style = "fg:yellow"
+format = '[$symbol $version(\(#$virtualenv\)) ]($style)'
+
+[docker_context]
+symbol = ""
+style = "fg:blue"
+format = '[$symbol $context ]($style)'
+
+[conda]
+symbol = "  "
+style = "fg:crust bg:sapphire"
+format = '[$symbol$environment ]($style)'
+ignore_base = false
 
 [time]
-style = "bold muted"
+disabled = false
+time_format = "%R"
+style = "fg:subtext1"
+format = '[ $time]($style)'
+
+[line_break]
+disabled = true
+
+[character]
+disabled = false
+success_symbol = '◯ [⏵](bold fg:green)'
+error_symbol = '◯ [⏵](bold fg:red)'
+vimcmd_symbol = '◯ [⏴](bold fg:green)'
+vimcmd_replace_one_symbol = '◯ [⏴](bold fg:lavender)'
+vimcmd_replace_symbol = '◯ [⏴](bold fg:lavender)'
+vimcmd_visual_symbol = '◯ [⏴](bold fg:yellow)'
+
+[cmd_duration]
+show_milliseconds = true
+format = " in $duration "
+style = "bg:lavender"
+disabled = false
+
+# Catppuccin-compatible names mapped to the jet-black base24 palette.
+[palettes.jet-black]
+rosewater = "#{{ base06-hex }}"
+flamingo  = "#{{ base08-hex }}"
+pink      = "#{{ base0F-hex }}"
+mauve     = "#{{ base0E-hex }}"
+red       = "#{{ base08-hex }}"
+maroon    = "#{{ base08-hex }}"
+peach     = "#{{ base09-hex }}"
+yellow    = "#{{ base0A-hex }}"
+green     = "#{{ base0B-hex }}"
+teal      = "#{{ base0C-hex }}"
+sky       = "#{{ base15-hex }}"
+sapphire  = "#{{ base0D-hex }}"
+blue      = "#{{ base0D-hex }}"
+lavender  = "#{{ base0E-hex }}"
+text      = "#{{ base05-hex }}"
+subtext1  = "#{{ base04-hex }}"
+subtext0  = "#{{ base04-hex }}"
+overlay2  = "#{{ base03-hex }}"
+overlay1  = "#{{ base03-hex }}"
+overlay0  = "#{{ base03-hex }}"
+surface2  = "#{{ base02-hex }}"
+surface1  = "#{{ base02-hex }}"
+surface0  = "#{{ base01-hex }}"
+base      = "#{{ base00-hex }}"
+mantle    = "#{{ base00-hex }}"
+crust     = "#{{ base00-hex }}"
