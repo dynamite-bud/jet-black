@@ -54,6 +54,11 @@ ln -sfn "$ROOT/jet-black-tmux/jet-black-thm.tmux"     "$ACTIVE/tmux-thm.tmux"
 ln -sfn "$ROOT/jet-black-starship/jet-black.toml"     "$ACTIVE/starship.toml"
 ln -sfn "$ROOT/jet-black-nvim"                        "$ACTIVE/nvim"
 
+# Register a ghostty theme named "jet-black" so the config can use
+# `theme = light:GitHub Light High Contrast,dark:jet-black`.
+GHOSTTY_THEMES="${XDG_CONFIG_HOME:-$HOME/.config}/ghostty/themes"
+[ -d "$(dirname "$GHOSTTY_THEMES")" ] && { mkdir -p "$GHOSTTY_THEMES"; ln -sfn "$ACTIVE/ghostty.conf" "$GHOSTTY_THEMES/jet-black"; }
+
 # Persist for shells (this process can't export to the parent) and for the
 # launchd session, so LaunchAgents / the appearance trigger see the same value.
 launchctl setenv THEME_PALETTE_SOURCE "$cmd" 2>/dev/null || true
