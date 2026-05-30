@@ -1,0 +1,34 @@
+system: "base24"
+name: "Jet Black"
+slug: "jet-black"
+author: "rudra (derived from Pitch Black by Viktor Qvarfordt)"
+variant: "dark"
+description: "Pure-black theme derived from VS Code Pitch Black + Dark+, equalized in OKLCH for legibility on #000."
+palette:
+  # ── Achromatic ramp (dark → light) ──
+  base00: "000000"  # background — pure black (terminal bg)
+  base01: "1a1a1a"  # selection / diff background, faint UI
+  base02: "2a2a2a"  # line numbers, borders, line highlight
+  base03: "666666"  # comments, invisibles, muted UI
+  base04: "808080"  # dark foreground, UI accents (Pitch Black tag-bracket gray)
+  base05: "d4d4d4"  # default foreground (Pitch Black primary text)
+  base06: "e8e8e8"  # lighter foreground
+  base07: "ffffff"  # brightest — emphasis / headings
+  # ── Accents (normal ANSI) ──
+  base08: "f44747"  # red     — variables, errors, deleted     (Dark+ error)
+  base09: "d2691e"  # orange  — integers, constants, booleans  (derived; Dark+ has none)
+  base0A: "d0c590"  # yellow  — classes, search highlight       (Dark+ function, desaturated)
+  base0B: "a8d57e"  # green   — strings, inserted               (Dark+ number, desaturated)
+  base0C: "5bb8a8"  # cyan    — support, regex, escapes         (Dark+ type/class teal)
+  base0D: "6db3f2"  # blue    — functions, methods, headings    (Dark+ keyword, lightened)
+  base0E: "c586c0"  # magenta — keywords, control flow          (Dark+ control keyword)
+  base0F: "d7ba7d"  # gold    — deprecated, special             (Dark+ css-class/escape)
+  # ── Bright accents (base24: bright ANSI variants) ──
+  base10: "ff6b6b"  # bright red
+  base11: "e8944a"  # bright orange
+  base12: "e8dc7f"  # bright yellow
+  base13: "c5e88b"  # bright green
+  base14: "72d4c0"  # bright cyan
+  base15: "86ceff"  # bright blue
+  base16: "dd99ff"  # bright magenta
+  base17: "f0d88f"  # bright gold

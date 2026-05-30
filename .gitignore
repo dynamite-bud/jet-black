@@ -1,0 +1,9 @@
+# Build/editor cruft
+.DS_Store
+node_modules/
+*.vsix
+*.log
+
+# Secrets — marketplace tokens must come from the environment, never the repo
+.env
+*.pat
